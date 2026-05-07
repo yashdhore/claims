@@ -1,0 +1,82 @@
+1. Create Azure subscription / enable active subscription
+
+2. Create Azure resource group
+   Name: claims-rg
+
+3. Create Azure Cosmos DB account
+   Name: claims-cosmos-db
+   API: NoSQL
+
+4. Create Cosmos DB database
+   Name: claimsdb
+
+5. Create Cosmos DB containers
+   adjusters
+   agent_events
+   claim_notes
+   claims
+   documents
+   payments
+   policies
+   tasks
+
+6. Use partition keys
+   adjusters: /adjuster_id
+   policies: /policy_id
+   claims: /claim_id
+   agent_events: /claim_id
+   payments: /claim_id
+   tasks: /claim_id
+   documents: /claim_id
+   claim_notes: /claim_id
+
+7. Open the project in VS Code
+   Folder: _qbe_claims
+
+8. Install / verify GitHub Copilot Chat
+   Use Copilot inside VS Code for code generation and explanation.
+
+9. Create cosmos_store.py
+   Purpose: New Cosmos DB data access layer.
+
+10. Keep utils/data_store.py
+    Purpose: Existing CSV data access layer.
+    Do not delete it yet.
+
+11. Add Cosmos DB environment variables
+    COSMOS_ENDPOINT
+    COSMOS_KEY
+    COSMOS_DATABASE=claimsdb
+
+12. Add .env to .gitignore
+    This prevents Cosmos keys from being pushed to GitHub.
+
+13. Update requirements.txt
+    Add:
+    azure-cosmos
+    python-dotenv
+
+14. Test cosmos_store.py locally
+    Confirm it can connect to Cosmos DB.
+
+15. Create migration script
+    scripts/migrate_csv_to_cosmos.py
+
+16. Migrate CSV data into Cosmos DB
+    Start with:
+    claims.csv
+    agent_events.csv
+
+17. Validate data in Azure Cosmos DB
+    Confirm documents appear in the right containers.
+
+18. Keep the current Streamlit app working with CSVs
+    This protects the working POC.
+
+19. Gradually refactor agents to use Cosmos DB
+    Start with one agent or one workflow path.
+
+20. Future target architecture
+    Streamlit / Python Agents
+       → cosmos_store.py
+       → Azure Cosmos DB

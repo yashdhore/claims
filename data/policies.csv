@@ -1,0 +1,121 @@
+policy_id,customer_id,customer_name,country,state,policy_status,policy_start_date,policy_end_date,coverage_type,deductible,coverage_limit,vehicle_year,vehicle_make,vehicle_model
+POL00001,CUST00001,Cameron Garcia,Australia,QLD,Active,7/19/2024,7/19/2025,Liability Only,500,25000,2024,Hyundai,Coupe
+POL00002,CUST00002,Quinn Davis,Australia,NSW,Active,10/1/2025,10/1/2026,Standard,1500,250000,2014,Nissan,SUV
+POL00003,CUST00003,Quinn Wilson,USA,IL,Expired,4/1/2024,4/1/2025,Standard,1000,50000,2014,Tesla,Coupe
+POL00004,CUST00004,Jordan Brown,USA,TX,Active,12/6/2023,12/5/2024,Full Coverage,1500,25000,2018,Kia,Van
+POL00005,CUST00005,Cameron Smith,Australia,SA,Active,8/21/2025,8/21/2026,Liability Only,1000,100000,2013,Nissan,Coupe
+POL00006,CUST00006,Casey Taylor,USA,NC,Active,5/2/2026,5/2/2027,Full Coverage,250,100000,2025,Tesla,Van
+POL00007,CUST00007,Taylor Taylor,USA,FL,Cancelled,4/18/2025,4/18/2026,Full Coverage,250,100000,2019,Toyota,Sedan
+POL00008,CUST00008,Alex Garcia,Australia,QLD,Expired,9/2/2025,9/2/2026,Liability Only,250,250000,2025,Honda,Van
+POL00009,CUST00009,Avery Taylor,USA,FL,Active,6/29/2024,6/29/2025,Full Coverage,1500,50000,2020,Chevrolet,Truck
+POL00010,CUST00010,Riley Moore,Australia,TAS,Expired,7/9/2024,7/9/2025,Standard,250,50000,2015,Honda,Truck
+POL00011,CUST00011,Morgan Smith,USA,NY,Active,9/10/2024,9/10/2025,Full Coverage,250,50000,2013,Toyota,Truck
+POL00012,CUST00012,Avery Garcia,USA,NY,Active,7/24/2025,7/24/2026,Full Coverage,1500,50000,2024,Subaru,Coupe
+POL00013,CUST00013,Jamie Davis,USA,CA,Active,1/26/2026,1/26/2027,Standard,250,25000,2012,Kia,Truck
+POL00014,CUST00014,Morgan Taylor,USA,NY,Active,10/21/2025,10/21/2026,Standard,500,100000,2019,Chevrolet,Sedan
+POL00015,CUST00015,Alex Taylor,Australia,SA,Expired,1/25/2026,1/25/2027,Liability Only,500,50000,2018,Subaru,Coupe
+POL00016,CUST00016,Taylor Wilson,USA,AZ,Active,3/6/2026,3/6/2027,Standard,1000,250000,2016,Kia,Van
+POL00017,CUST00017,Morgan Miller,UK,Northern Ireland,Active,11/28/2025,11/28/2026,Liability Only,250,100000,2012,Toyota,Van
+POL00018,CUST00018,Cameron Brown,Australia,SA,Active,12/14/2023,12/13/2024,Full Coverage,250,50000,2013,Honda,SUV
+POL00019,CUST00019,Morgan Anderson,Australia,NSW,Active,9/29/2024,9/29/2025,Full Coverage,250,250000,2022,Tesla,Truck
+POL00020,CUST00020,Riley Garcia,Australia,VIC,Active,6/19/2024,6/19/2025,Liability Only,1000,250000,2017,Honda,Sedan
+POL00021,CUST00021,Jordan Johnson,Australia,SA,Active,10/6/2024,10/6/2025,Full Coverage,1000,50000,2017,Honda,SUV
+POL00022,CUST00022,Avery Taylor,Australia,QLD,Active,11/25/2025,11/25/2026,Full Coverage,250,100000,2022,Honda,SUV
+POL00023,CUST00023,Cameron Brown,Australia,NSW,Active,1/16/2026,1/16/2027,Full Coverage,500,100000,2015,Nissan,Van
+POL00024,CUST00024,Alex Johnson,Australia,QLD,Active,12/21/2023,12/20/2024,Standard,250,25000,2017,Ford,Truck
+POL00025,CUST00025,Jamie Taylor,USA,NC,Active,10/18/2024,10/18/2025,Liability Only,500,25000,2025,Hyundai,Van
+POL00026,CUST00026,Taylor Smith,UK,Scotland,Active,2/19/2025,2/19/2026,Liability Only,1000,50000,2022,Chevrolet,Sedan
+POL00027,CUST00027,Jamie Anderson,Australia,SA,Active,11/22/2023,11/21/2024,Liability Only,500,50000,2018,Toyota,SUV
+POL00028,CUST00028,Jamie Garcia,UK,Wales,Active,2/24/2024,2/23/2025,Full Coverage,250,250000,2025,Toyota,Coupe
+POL00029,CUST00029,Avery Davis,USA,NY,Active,1/20/2024,1/19/2025,Liability Only,500,25000,2022,Chevrolet,Coupe
+POL00030,CUST00030,Jordan Miller,Australia,QLD,Active,12/2/2023,12/1/2024,Full Coverage,1500,100000,2012,Honda,Truck
+POL00031,CUST00031,Jordan Anderson,USA,IL,Active,3/27/2026,3/27/2027,Full Coverage,1000,250000,2021,Tesla,Sedan
+POL00032,CUST00032,Casey Smith,Australia,SA,Active,10/23/2025,10/23/2026,Liability Only,500,100000,2018,Honda,Truck
+POL00033,CUST00033,Jordan Miller,UK,Wales,Active,6/25/2024,6/25/2025,Full Coverage,1500,100000,2018,Nissan,Van
+POL00034,CUST00034,Jamie Brown,USA,NY,Active,3/1/2025,3/1/2026,Standard,1500,25000,2016,Nissan,SUV
+POL00035,CUST00035,Riley Moore,Australia,SA,Active,8/22/2024,8/22/2025,Full Coverage,500,250000,2024,Ford,Sedan
+POL00036,CUST00036,Quinn Davis,Australia,SA,Active,6/25/2024,6/25/2025,Liability Only,1000,50000,2024,Chevrolet,SUV
+POL00037,CUST00037,Avery Anderson,USA,TX,Expired,8/28/2025,8/28/2026,Liability Only,1500,250000,2022,Chevrolet,Coupe
+POL00038,CUST00038,Taylor Smith,Australia,WA,Expired,8/29/2025,8/29/2026,Liability Only,1500,50000,2014,Tesla,Coupe
+POL00039,CUST00039,Jordan Moore,USA,NY,Active,12/19/2023,12/18/2024,Standard,1000,250000,2021,Tesla,Coupe
+POL00040,CUST00040,Avery Moore,UK,Northern Ireland,Active,11/24/2025,11/24/2026,Liability Only,1000,250000,2022,Chevrolet,Truck
+POL00041,CUST00041,Casey Garcia,Australia,NSW,Active,5/5/2024,5/5/2025,Standard,250,50000,2014,Chevrolet,Coupe
+POL00042,CUST00042,Morgan Johnson,UK,Scotland,Active,5/12/2024,5/12/2025,Standard,1500,250000,2012,Chevrolet,Coupe
+POL00043,CUST00043,Alex Anderson,Australia,SA,Active,5/23/2024,5/23/2025,Liability Only,1000,100000,2024,Kia,Coupe
+POL00044,CUST00044,Morgan Miller,UK,Scotland,Active,12/22/2024,12/22/2025,Liability Only,1500,100000,2022,Kia,SUV
+POL00045,CUST00045,Cameron Smith,Australia,VIC,Expired,8/6/2024,8/6/2025,Full Coverage,250,25000,2022,Kia,SUV
+POL00046,CUST00046,Casey Wilson,Australia,VIC,Active,3/15/2026,3/15/2027,Standard,1000,100000,2024,Kia,Truck
+POL00047,CUST00047,Jordan Moore,Australia,QLD,Active,1/2/2024,1/1/2025,Full Coverage,250,100000,2015,Honda,Sedan
+POL00048,CUST00048,Alex Anderson,USA,NY,Active,10/13/2025,10/13/2026,Liability Only,1500,25000,2021,Chevrolet,Coupe
+POL00049,CUST00049,Riley Brown,UK,Wales,Active,3/11/2024,3/11/2025,Full Coverage,250,50000,2016,Honda,Van
+POL00050,CUST00050,Jamie Wilson,USA,IL,Cancelled,9/23/2024,9/23/2025,Liability Only,250,50000,2013,Nissan,Van
+POL00051,CUST00051,Cameron Wilson,USA,TX,Active,5/15/2025,5/15/2026,Liability Only,1000,25000,2025,Kia,Coupe
+POL00052,CUST00052,Avery Brown,USA,AZ,Active,4/30/2025,4/30/2026,Full Coverage,1000,250000,2019,Kia,Van
+POL00053,CUST00053,Morgan Johnson,Australia,QLD,Active,12/15/2023,12/14/2024,Standard,500,250000,2021,Kia,Truck
+POL00054,CUST00054,Riley Brown,USA,NC,Active,12/16/2023,12/15/2024,Standard,1000,100000,2016,Nissan,Van
+POL00055,CUST00055,Morgan Wilson,USA,NY,Active,2/7/2026,2/7/2027,Liability Only,1500,250000,2019,Toyota,Sedan
+POL00056,CUST00056,Morgan Miller,Australia,VIC,Active,3/17/2025,3/17/2026,Standard,1500,100000,2018,Tesla,Truck
+POL00057,CUST00057,Casey Miller,Australia,TAS,Active,1/26/2025,1/26/2026,Liability Only,500,100000,2013,Tesla,SUV
+POL00058,CUST00058,Avery Miller,USA,NY,Active,4/9/2024,4/9/2025,Full Coverage,1000,25000,2025,Chevrolet,Truck
+POL00059,CUST00059,Casey Smith,USA,GA,Active,11/3/2025,11/3/2026,Liability Only,1000,25000,2012,Tesla,Truck
+POL00060,CUST00060,Avery Johnson,UK,Scotland,Expired,7/21/2024,7/21/2025,Full Coverage,1000,250000,2019,Subaru,Truck
+POL00061,CUST00061,Avery Johnson,USA,TX,Expired,8/20/2025,8/20/2026,Standard,1500,25000,2021,Toyota,SUV
+POL00062,CUST00062,Morgan Johnson,USA,IL,Active,2/7/2026,2/7/2027,Standard,500,250000,2019,Subaru,Truck
+POL00063,CUST00063,Quinn Anderson,UK,Northern Ireland,Active,6/27/2025,6/27/2026,Full Coverage,250,50000,2022,Chevrolet,Truck
+POL00064,CUST00064,Morgan Brown,UK,England,Active,11/26/2025,11/26/2026,Liability Only,250,250000,2019,Subaru,Truck
+POL00065,CUST00065,Casey Moore,USA,NY,Active,7/14/2025,7/14/2026,Liability Only,1000,50000,2018,Honda,Van
+POL00066,CUST00066,Taylor Johnson,USA,FL,Active,8/6/2025,8/6/2026,Standard,1000,250000,2013,Subaru,Truck
+POL00067,CUST00067,Cameron Taylor,UK,Northern Ireland,Active,7/31/2025,7/31/2026,Liability Only,250,250000,2023,Hyundai,Van
+POL00068,CUST00068,Morgan Anderson,Australia,NSW,Active,2/1/2026,2/1/2027,Liability Only,1000,25000,2024,Ford,Coupe
+POL00069,CUST00069,Taylor Anderson,UK,Northern Ireland,Active,7/25/2025,7/25/2026,Standard,250,250000,2017,Kia,Truck
+POL00070,CUST00070,Taylor Davis,Australia,TAS,Active,1/18/2026,1/18/2027,Standard,1000,250000,2025,Tesla,Sedan
+POL00071,CUST00071,Casey Davis,Australia,NSW,Active,6/17/2025,6/17/2026,Standard,250,250000,2018,Toyota,SUV
+POL00072,CUST00072,Avery Moore,UK,Wales,Active,8/6/2024,8/6/2025,Liability Only,1000,50000,2016,Subaru,Coupe
+POL00073,CUST00073,Quinn Garcia,USA,TX,Active,7/29/2024,7/29/2025,Standard,250,250000,2013,Chevrolet,Sedan
+POL00074,CUST00074,Taylor Moore,Australia,NSW,Expired,7/11/2024,7/11/2025,Standard,1000,250000,2025,Subaru,Coupe
+POL00075,CUST00075,Taylor Wilson,USA,NC,Active,10/18/2024,10/18/2025,Full Coverage,500,25000,2016,Kia,Truck
+POL00076,CUST00076,Alex Miller,UK,Wales,Active,1/16/2024,1/15/2025,Full Coverage,1500,50000,2019,Tesla,Coupe
+POL00077,CUST00077,Cameron Wilson,Australia,QLD,Active,10/17/2024,10/17/2025,Standard,500,50000,2021,Kia,SUV
+POL00078,CUST00078,Avery Wilson,Australia,NSW,Active,6/14/2025,6/14/2026,Full Coverage,500,250000,2012,Ford,Van
+POL00079,CUST00079,Jordan Moore,UK,Wales,Active,11/27/2023,11/26/2024,Standard,250,50000,2018,Ford,Sedan
+POL00080,CUST00080,Quinn Wilson,Australia,QLD,Active,5/24/2025,5/24/2026,Standard,1500,100000,2022,Subaru,Van
+POL00081,CUST00081,Casey Garcia,USA,CA,Active,9/7/2025,9/7/2026,Standard,250,25000,2019,Ford,Truck
+POL00082,CUST00082,Alex Miller,USA,TX,Active,6/7/2025,6/7/2026,Standard,500,50000,2020,Kia,Van
+POL00083,CUST00083,Taylor Johnson,UK,Scotland,Active,11/12/2025,11/12/2026,Standard,500,250000,2021,Ford,SUV
+POL00084,CUST00084,Avery Miller,Australia,TAS,Active,8/18/2025,8/18/2026,Standard,1000,50000,2013,Subaru,Truck
+POL00085,CUST00085,Jamie Miller,UK,Wales,Active,7/20/2024,7/20/2025,Standard,500,250000,2025,Subaru,Sedan
+POL00086,CUST00086,Riley Anderson,USA,AZ,Active,9/27/2024,9/27/2025,Full Coverage,1000,25000,2025,Kia,Truck
+POL00087,CUST00087,Avery Miller,USA,TX,Active,8/23/2024,8/23/2025,Liability Only,1000,50000,2022,Chevrolet,Van
+POL00088,CUST00088,Taylor Johnson,Australia,TAS,Expired,3/23/2024,3/23/2025,Full Coverage,250,100000,2024,Subaru,Sedan
+POL00089,CUST00089,Taylor Johnson,UK,Wales,Expired,4/16/2024,4/16/2025,Standard,1500,50000,2015,Ford,Van
+POL00090,CUST00090,Casey Brown,Australia,SA,Active,12/8/2024,12/8/2025,Standard,1000,100000,2024,Honda,Coupe
+POL00091,CUST00091,Morgan Wilson,USA,FL,Cancelled,3/24/2024,3/24/2025,Full Coverage,1000,25000,2024,Kia,Sedan
+POL00092,CUST00092,Avery Davis,Australia,SA,Active,12/30/2025,12/30/2026,Full Coverage,1000,250000,2025,Hyundai,Sedan
+POL00093,CUST00093,Alex Anderson,UK,Scotland,Expired,1/8/2025,1/8/2026,Full Coverage,1000,50000,2022,Honda,Coupe
+POL00094,CUST00094,Jamie Johnson,UK,Wales,Active,7/10/2024,7/10/2025,Liability Only,1000,250000,2013,Honda,SUV
+POL00095,CUST00095,Avery Davis,UK,Scotland,Active,4/3/2025,4/3/2026,Full Coverage,1500,50000,2018,Honda,Coupe
+POL00096,CUST00096,Alex Davis,UK,Northern Ireland,Active,7/23/2025,7/23/2026,Standard,500,100000,2013,Hyundai,Van
+POL00097,CUST00097,Jamie Miller,UK,Wales,Active,3/4/2026,3/4/2027,Liability Only,1500,25000,2022,Chevrolet,Van
+POL00098,CUST00098,Riley Garcia,USA,TX,Cancelled,2/20/2024,2/19/2025,Full Coverage,500,25000,2025,Tesla,SUV
+POL00099,CUST00099,Morgan Davis,UK,Scotland,Active,1/24/2024,1/23/2025,Full Coverage,250,100000,2025,Ford,SUV
+POL00100,CUST00100,Taylor Johnson,UK,Wales,Active,2/8/2024,2/7/2025,Liability Only,500,25000,2017,Chevrolet,Van
+POL00101,CUST00101,Casey Smith,Australia,NSW,Active,11/8/2025,11/8/2026,Standard,250,25000,2019,Subaru,Truck
+POL00102,CUST00102,Cameron Garcia,UK,England,Cancelled,1/28/2025,1/28/2026,Liability Only,1000,250000,2022,Toyota,Sedan
+POL00103,CUST00103,Jordan Moore,Australia,WA,Active,2/23/2025,2/23/2026,Standard,250,25000,2017,Ford,Sedan
+POL00104,CUST00104,Quinn Taylor,USA,IL,Active,8/4/2024,8/4/2025,Standard,1000,250000,2020,Kia,Sedan
+POL00105,CUST00105,Cameron Garcia,UK,England,Active,12/14/2023,12/13/2024,Liability Only,1500,100000,2025,Subaru,Coupe
+POL00106,CUST00106,Riley Wilson,Australia,TAS,Active,1/28/2026,1/28/2027,Standard,1000,50000,2022,Subaru,Sedan
+POL00107,CUST00107,Jamie Johnson,USA,CA,Active,1/30/2026,1/30/2027,Standard,500,25000,2021,Tesla,Van
+POL00108,CUST00108,Jamie Davis,Australia,TAS,Expired,12/31/2025,12/31/2026,Standard,250,100000,2021,Nissan,Truck
+POL00109,CUST00109,Avery Garcia,USA,NY,Expired,11/28/2025,11/28/2026,Standard,1000,25000,2024,Nissan,Van
+POL00110,CUST00110,Cameron Anderson,USA,AZ,Active,12/22/2023,12/21/2024,Full Coverage,250,100000,2012,Ford,Truck
+POL00111,CUST00111,Riley Smith,UK,Wales,Active,5/23/2025,5/23/2026,Liability Only,1500,25000,2014,Toyota,Sedan
+POL00112,CUST00112,Jamie Moore,UK,Scotland,Active,4/15/2025,4/15/2026,Standard,1000,100000,2024,Honda,Sedan
+POL00113,CUST00113,Quinn Smith,USA,FL,Active,3/24/2024,3/24/2025,Standard,1500,250000,2019,Subaru,Coupe
+POL00114,CUST00114,Cameron Johnson,Australia,VIC,Active,3/23/2024,3/23/2025,Liability Only,1000,250000,2020,Nissan,Sedan
+POL00115,CUST00115,Alex Smith,USA,AZ,Active,8/30/2024,8/30/2025,Liability Only,500,100000,2016,Hyundai,Sedan
+POL00116,CUST00116,Jamie Brown,USA,NC,Active,4/1/2024,4/1/2025,Full Coverage,500,100000,2013,Kia,Sedan
+POL00117,CUST00117,Jordan Davis,Australia,NSW,Active,1/20/2025,1/20/2026,Full Coverage,1500,250000,2016,Honda,Coupe
+POL00118,CUST00118,Quinn Moore,USA,GA,Expired,11/11/2025,11/11/2026,Standard,250,250000,2025,Honda,SUV
+POL00119,CUST00119,Cameron Johnson,Australia,SA,Active,3/21/2025,3/21/2026,Standard,1000,50000,2017,Ford,Sedan
+POL00120,CUST00120,Cameron Garcia,UK,England,Expired,11/8/2024,11/8/2025,Standard,1000,50000,2015,Honda,SUV

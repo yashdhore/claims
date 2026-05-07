@@ -1,0 +1,268 @@
+note_id,claim_id,adjuster_id,note_date,note_text
+NOTE00001,CLM00001,ADJ006,3/26/2026,Potential fraud indicator reviewed.
+NOTE00002,CLM00001,ADJ006,3/13/2026,Potential fraud indicator reviewed.
+NOTE00003,CLM00002,ADJ001,1/9/2026,Potential fraud indicator reviewed.
+NOTE00004,CLM00002,ADJ001,12/25/2025,Customer contacted for additional information.
+NOTE00005,CLM00002,ADJ001,1/3/2026,Photos and damage details reviewed.
+NOTE00006,CLM00002,ADJ001,1/2/2026,Claim moved to next review stage.
+NOTE00007,CLM00003,ADJ003,4/24/2026,Potential fraud indicator reviewed.
+NOTE00008,CLM00004,ADJ011,1/20/2026,Coverage verification completed.
+NOTE00009,CLM00004,ADJ011,1/23/2026,Claim opened and initial review started.
+NOTE00010,CLM00005,ADJ008,4/26/2026,Payment recommendation prepared.
+NOTE00011,CLM00006,ADJ005,12/28/2025,Potential fraud indicator reviewed.
+NOTE00012,CLM00006,ADJ005,1/6/2026,Coverage verification completed.
+NOTE00013,CLM00006,ADJ005,12/18/2025,Payment recommendation prepared.
+NOTE00014,CLM00006,ADJ005,12/22/2025,Photos and damage details reviewed.
+NOTE00015,CLM00007,ADJ007,4/16/2026,Customer contacted for additional information.
+NOTE00016,CLM00007,ADJ007,4/11/2026,Potential fraud indicator reviewed.
+NOTE00017,CLM00007,ADJ007,4/29/2026,Claim opened and initial review started.
+NOTE00018,CLM00008,ADJ007,1/20/2026,Customer contacted for additional information.
+NOTE00019,CLM00008,ADJ007,1/17/2026,Claim opened and initial review started.
+NOTE00020,CLM00009,ADJ006,2/15/2026,Claim opened and initial review started.
+NOTE00021,CLM00009,ADJ006,2/3/2026,Claim opened and initial review started.
+NOTE00022,CLM00009,ADJ006,2/8/2026,Payment recommendation prepared.
+NOTE00023,CLM00009,ADJ006,2/3/2026,Coverage verification completed.
+NOTE00024,CLM00010,ADJ005,4/24/2026,Adjuster requested supporting documents.
+NOTE00025,CLM00011,ADJ004,5/12/2026,Claim moved to next review stage.
+NOTE00026,CLM00011,ADJ004,5/4/2026,Claim moved to next review stage.
+NOTE00027,CLM00012,ADJ002,12/23/2025,Photos and damage details reviewed.
+NOTE00028,CLM00012,ADJ002,1/4/2026,Coverage verification completed.
+NOTE00029,CLM00013,ADJ008,11/25/2025,Adjuster requested supporting documents.
+NOTE00030,CLM00013,ADJ008,11/17/2025,Photos and damage details reviewed.
+NOTE00031,CLM00013,ADJ008,12/6/2025,Potential fraud indicator reviewed.
+NOTE00032,CLM00013,ADJ008,12/3/2025,Payment recommendation prepared.
+NOTE00033,CLM00014,ADJ005,2/19/2026,Potential fraud indicator reviewed.
+NOTE00034,CLM00015,ADJ002,1/10/2026,Potential fraud indicator reviewed.
+NOTE00035,CLM00015,ADJ002,1/1/2026,Photos and damage details reviewed.
+NOTE00036,CLM00015,ADJ002,12/28/2025,Potential fraud indicator reviewed.
+NOTE00037,CLM00016,ADJ007,4/14/2026,Payment recommendation prepared.
+NOTE00038,CLM00016,ADJ007,3/28/2026,Coverage verification completed.
+NOTE00039,CLM00017,ADJ001,12/28/2025,Photos and damage details reviewed.
+NOTE00040,CLM00017,ADJ001,12/26/2025,Payment recommendation prepared.
+NOTE00041,CLM00017,ADJ001,12/30/2025,Claim opened and initial review started.
+NOTE00042,CLM00018,ADJ008,3/31/2026,Photos and damage details reviewed.
+NOTE00043,CLM00018,ADJ008,3/30/2026,Coverage verification completed.
+NOTE00044,CLM00018,ADJ008,3/26/2026,Coverage verification completed.
+NOTE00045,CLM00018,ADJ008,3/28/2026,Customer contacted for additional information.
+NOTE00046,CLM00019,ADJ012,2/25/2026,Claim moved to next review stage.
+NOTE00047,CLM00019,ADJ012,1/31/2026,Coverage verification completed.
+NOTE00048,CLM00019,ADJ012,1/30/2026,Adjuster requested supporting documents.
+NOTE00049,CLM00019,ADJ012,2/10/2026,Claim opened and initial review started.
+NOTE00050,CLM00020,ADJ003,12/22/2025,Coverage verification completed.
+NOTE00051,CLM00021,ADJ011,4/1/2026,Claim moved to next review stage.
+NOTE00052,CLM00021,ADJ011,4/4/2026,Claim opened and initial review started.
+NOTE00053,CLM00021,ADJ011,4/1/2026,Coverage verification completed.
+NOTE00054,CLM00021,ADJ011,4/18/2026,Customer contacted for additional information.
+NOTE00055,CLM00022,ADJ010,3/7/2026,Coverage verification completed.
+NOTE00056,CLM00022,ADJ010,2/28/2026,Coverage verification completed.
+NOTE00057,CLM00022,ADJ010,2/18/2026,Coverage verification completed.
+NOTE00058,CLM00022,ADJ010,2/23/2026,Claim moved to next review stage.
+NOTE00059,CLM00023,ADJ007,4/28/2026,Payment recommendation prepared.
+NOTE00060,CLM00023,ADJ007,5/3/2026,Claim moved to next review stage.
+NOTE00061,CLM00023,ADJ007,4/25/2026,Adjuster requested supporting documents.
+NOTE00062,CLM00024,ADJ012,4/17/2026,Payment recommendation prepared.
+NOTE00063,CLM00024,ADJ012,4/15/2026,Customer contacted for additional information.
+NOTE00064,CLM00024,ADJ012,4/26/2026,Payment recommendation prepared.
+NOTE00065,CLM00025,ADJ006,6/3/2026,Coverage verification completed.
+NOTE00066,CLM00025,ADJ006,5/16/2026,Claim moved to next review stage.
+NOTE00067,CLM00025,ADJ006,5/18/2026,Claim opened and initial review started.
+NOTE00068,CLM00026,ADJ001,3/17/2026,Photos and damage details reviewed.
+NOTE00069,CLM00026,ADJ001,2/22/2026,Adjuster requested supporting documents.
+NOTE00070,CLM00027,ADJ008,1/18/2026,Photos and damage details reviewed.
+NOTE00071,CLM00027,ADJ008,1/15/2026,Claim moved to next review stage.
+NOTE00072,CLM00027,ADJ008,1/16/2026,Potential fraud indicator reviewed.
+NOTE00073,CLM00027,ADJ008,1/27/2026,Coverage verification completed.
+NOTE00074,CLM00028,ADJ008,3/23/2026,Claim moved to next review stage.
+NOTE00075,CLM00028,ADJ008,3/14/2026,Payment recommendation prepared.
+NOTE00076,CLM00028,ADJ008,3/29/2026,Payment recommendation prepared.
+NOTE00077,CLM00028,ADJ008,3/20/2026,Photos and damage details reviewed.
+NOTE00078,CLM00029,ADJ006,1/25/2026,Photos and damage details reviewed.
+NOTE00079,CLM00029,ADJ006,2/12/2026,Payment recommendation prepared.
+NOTE00080,CLM00029,ADJ006,1/25/2026,Claim opened and initial review started.
+NOTE00081,CLM00030,ADJ007,1/13/2026,Customer contacted for additional information.
+NOTE00082,CLM00031,ADJ007,5/26/2026,Claim opened and initial review started.
+NOTE00083,CLM00032,ADJ010,4/29/2026,Coverage verification completed.
+NOTE00084,CLM00032,ADJ010,4/27/2026,Photos and damage details reviewed.
+NOTE00085,CLM00032,ADJ010,4/25/2026,Coverage verification completed.
+NOTE00086,CLM00032,ADJ010,5/11/2026,Payment recommendation prepared.
+NOTE00087,CLM00033,ADJ007,1/5/2026,Payment recommendation prepared.
+NOTE00088,CLM00033,ADJ007,1/25/2026,Payment recommendation prepared.
+NOTE00089,CLM00033,ADJ007,1/4/2026,Claim opened and initial review started.
+NOTE00090,CLM00034,ADJ007,3/16/2026,Claim opened and initial review started.
+NOTE00091,CLM00034,ADJ007,4/1/2026,Adjuster requested supporting documents.
+NOTE00092,CLM00034,ADJ007,4/2/2026,Adjuster requested supporting documents.
+NOTE00093,CLM00034,ADJ007,3/16/2026,Potential fraud indicator reviewed.
+NOTE00094,CLM00035,ADJ012,1/8/2026,Customer contacted for additional information.
+NOTE00095,CLM00035,ADJ012,1/21/2026,Photos and damage details reviewed.
+NOTE00096,CLM00036,ADJ008,11/26/2025,Adjuster requested supporting documents.
+NOTE00097,CLM00036,ADJ008,12/16/2025,Claim moved to next review stage.
+NOTE00098,CLM00037,ADJ011,4/14/2026,Potential fraud indicator reviewed.
+NOTE00099,CLM00037,ADJ011,3/22/2026,Claim moved to next review stage.
+NOTE00100,CLM00037,ADJ011,4/1/2026,Payment recommendation prepared.
+NOTE00101,CLM00038,ADJ010,2/9/2026,Coverage verification completed.
+NOTE00102,CLM00038,ADJ010,1/27/2026,Customer contacted for additional information.
+NOTE00103,CLM00039,ADJ004,4/18/2026,Potential fraud indicator reviewed.
+NOTE00104,CLM00040,ADJ007,1/25/2026,Payment recommendation prepared.
+NOTE00105,CLM00040,ADJ007,1/14/2026,Claim opened and initial review started.
+NOTE00106,CLM00040,ADJ007,2/4/2026,Photos and damage details reviewed.
+NOTE00107,CLM00040,ADJ007,1/15/2026,Payment recommendation prepared.
+NOTE00108,CLM00041,ADJ007,5/12/2026,Claim moved to next review stage.
+NOTE00109,CLM00041,ADJ007,5/10/2026,Customer contacted for additional information.
+NOTE00110,CLM00041,ADJ007,5/20/2026,Claim opened and initial review started.
+NOTE00111,CLM00041,ADJ007,4/29/2026,Coverage verification completed.
+NOTE00112,CLM00042,ADJ005,11/22/2025,Claim opened and initial review started.
+NOTE00113,CLM00042,ADJ005,12/13/2025,Customer contacted for additional information.
+NOTE00114,CLM00042,ADJ005,12/5/2025,Adjuster requested supporting documents.
+NOTE00115,CLM00042,ADJ005,12/12/2025,Claim opened and initial review started.
+NOTE00116,CLM00043,ADJ006,5/27/2026,Claim moved to next review stage.
+NOTE00117,CLM00043,ADJ006,4/28/2026,Coverage verification completed.
+NOTE00118,CLM00044,ADJ007,2/26/2026,Potential fraud indicator reviewed.
+NOTE00119,CLM00044,ADJ007,3/3/2026,Customer contacted for additional information.
+NOTE00120,CLM00045,ADJ007,3/25/2026,Coverage verification completed.
+NOTE00121,CLM00045,ADJ007,4/7/2026,Potential fraud indicator reviewed.
+NOTE00122,CLM00045,ADJ007,4/10/2026,Claim moved to next review stage.
+NOTE00123,CLM00046,ADJ011,2/5/2026,Photos and damage details reviewed.
+NOTE00124,CLM00046,ADJ011,2/6/2026,Customer contacted for additional information.
+NOTE00125,CLM00046,ADJ011,1/28/2026,Claim moved to next review stage.
+NOTE00126,CLM00046,ADJ011,1/13/2026,Customer contacted for additional information.
+NOTE00127,CLM00047,ADJ011,4/25/2026,Customer contacted for additional information.
+NOTE00128,CLM00047,ADJ011,4/28/2026,Potential fraud indicator reviewed.
+NOTE00129,CLM00047,ADJ011,5/12/2026,Claim moved to next review stage.
+NOTE00130,CLM00047,ADJ011,4/18/2026,Adjuster requested supporting documents.
+NOTE00131,CLM00048,ADJ006,2/22/2026,Coverage verification completed.
+NOTE00132,CLM00048,ADJ006,2/18/2026,Potential fraud indicator reviewed.
+NOTE00133,CLM00048,ADJ006,2/20/2026,Photos and damage details reviewed.
+NOTE00134,CLM00048,ADJ006,2/28/2026,Potential fraud indicator reviewed.
+NOTE00135,CLM00049,ADJ007,1/20/2026,Adjuster requested supporting documents.
+NOTE00136,CLM00050,ADJ006,5/22/2026,Customer contacted for additional information.
+NOTE00137,CLM00050,ADJ006,5/2/2026,Adjuster requested supporting documents.
+NOTE00138,CLM00051,ADJ004,2/28/2026,Photos and damage details reviewed.
+NOTE00139,CLM00051,ADJ004,3/11/2026,Potential fraud indicator reviewed.
+NOTE00140,CLM00052,ADJ011,4/29/2026,Customer contacted for additional information.
+NOTE00141,CLM00052,ADJ011,4/20/2026,Claim opened and initial review started.
+NOTE00142,CLM00052,ADJ011,4/27/2026,Payment recommendation prepared.
+NOTE00143,CLM00053,ADJ001,1/9/2026,Adjuster requested supporting documents.
+NOTE00144,CLM00053,ADJ001,12/19/2025,Photos and damage details reviewed.
+NOTE00145,CLM00053,ADJ001,12/18/2025,Photos and damage details reviewed.
+NOTE00146,CLM00054,ADJ012,4/8/2026,Potential fraud indicator reviewed.
+NOTE00147,CLM00054,ADJ012,3/28/2026,Claim opened and initial review started.
+NOTE00148,CLM00054,ADJ012,3/27/2026,Claim moved to next review stage.
+NOTE00149,CLM00054,ADJ012,4/11/2026,Customer contacted for additional information.
+NOTE00150,CLM00055,ADJ004,4/13/2026,Potential fraud indicator reviewed.
+NOTE00151,CLM00055,ADJ004,3/17/2026,Adjuster requested supporting documents.
+NOTE00152,CLM00055,ADJ004,3/30/2026,Potential fraud indicator reviewed.
+NOTE00153,CLM00056,ADJ001,4/16/2026,Coverage verification completed.
+NOTE00154,CLM00057,ADJ007,5/20/2026,Potential fraud indicator reviewed.
+NOTE00155,CLM00057,ADJ007,5/4/2026,Photos and damage details reviewed.
+NOTE00156,CLM00058,ADJ005,1/29/2026,Adjuster requested supporting documents.
+NOTE00157,CLM00058,ADJ005,2/4/2026,Photos and damage details reviewed.
+NOTE00158,CLM00058,ADJ005,1/22/2026,Photos and damage details reviewed.
+NOTE00159,CLM00059,ADJ005,3/13/2026,Potential fraud indicator reviewed.
+NOTE00160,CLM00059,ADJ005,3/14/2026,Payment recommendation prepared.
+NOTE00161,CLM00059,ADJ005,3/30/2026,Customer contacted for additional information.
+NOTE00162,CLM00059,ADJ005,3/16/2026,Adjuster requested supporting documents.
+NOTE00163,CLM00060,ADJ006,1/26/2026,Payment recommendation prepared.
+NOTE00164,CLM00060,ADJ006,1/22/2026,Coverage verification completed.
+NOTE00165,CLM00061,ADJ012,2/10/2026,Photos and damage details reviewed.
+NOTE00166,CLM00061,ADJ012,2/16/2026,Claim opened and initial review started.
+NOTE00167,CLM00061,ADJ012,2/19/2026,Claim moved to next review stage.
+NOTE00168,CLM00061,ADJ012,3/5/2026,Potential fraud indicator reviewed.
+NOTE00169,CLM00062,ADJ003,4/19/2026,Claim moved to next review stage.
+NOTE00170,CLM00062,ADJ003,4/18/2026,Photos and damage details reviewed.
+NOTE00171,CLM00062,ADJ003,4/14/2026,Claim moved to next review stage.
+NOTE00172,CLM00063,ADJ006,2/3/2026,Claim moved to next review stage.
+NOTE00173,CLM00063,ADJ006,1/24/2026,Potential fraud indicator reviewed.
+NOTE00174,CLM00064,ADJ001,4/5/2026,Payment recommendation prepared.
+NOTE00175,CLM00064,ADJ001,4/14/2026,Coverage verification completed.
+NOTE00176,CLM00064,ADJ001,4/6/2026,Potential fraud indicator reviewed.
+NOTE00177,CLM00065,ADJ003,2/21/2026,Potential fraud indicator reviewed.
+NOTE00178,CLM00065,ADJ003,2/6/2026,Customer contacted for additional information.
+NOTE00179,CLM00065,ADJ003,2/24/2026,Coverage verification completed.
+NOTE00180,CLM00066,ADJ006,3/16/2026,Claim opened and initial review started.
+NOTE00181,CLM00066,ADJ006,3/18/2026,Payment recommendation prepared.
+NOTE00182,CLM00067,ADJ012,1/30/2026,Adjuster requested supporting documents.
+NOTE00183,CLM00067,ADJ012,2/11/2026,Customer contacted for additional information.
+NOTE00184,CLM00068,ADJ006,5/14/2026,Payment recommendation prepared.
+NOTE00185,CLM00068,ADJ006,4/27/2026,Adjuster requested supporting documents.
+NOTE00186,CLM00068,ADJ006,4/30/2026,Adjuster requested supporting documents.
+NOTE00187,CLM00068,ADJ006,5/14/2026,Photos and damage details reviewed.
+NOTE00188,CLM00069,ADJ003,3/21/2026,Potential fraud indicator reviewed.
+NOTE00189,CLM00069,ADJ003,2/26/2026,Payment recommendation prepared.
+NOTE00190,CLM00069,ADJ003,3/15/2026,Payment recommendation prepared.
+NOTE00191,CLM00069,ADJ003,3/14/2026,Potential fraud indicator reviewed.
+NOTE00192,CLM00070,ADJ007,4/3/2026,Claim opened and initial review started.
+NOTE00193,CLM00070,ADJ007,4/11/2026,Claim moved to next review stage.
+NOTE00194,CLM00070,ADJ007,4/8/2026,Customer contacted for additional information.
+NOTE00195,CLM00070,ADJ007,3/20/2026,Coverage verification completed.
+NOTE00196,CLM00071,ADJ006,12/30/2025,Claim opened and initial review started.
+NOTE00197,CLM00071,ADJ006,1/12/2026,Potential fraud indicator reviewed.
+NOTE00198,CLM00071,ADJ006,1/18/2026,Claim moved to next review stage.
+NOTE00199,CLM00072,ADJ012,3/29/2026,Claim opened and initial review started.
+NOTE00200,CLM00072,ADJ012,3/29/2026,Adjuster requested supporting documents.
+NOTE00201,CLM00072,ADJ012,4/2/2026,Coverage verification completed.
+NOTE00202,CLM00072,ADJ012,4/9/2026,Claim moved to next review stage.
+NOTE00203,CLM00073,ADJ007,12/27/2025,Photos and damage details reviewed.
+NOTE00204,CLM00073,ADJ007,12/24/2025,Claim opened and initial review started.
+NOTE00205,CLM00073,ADJ007,12/28/2025,Customer contacted for additional information.
+NOTE00206,CLM00073,ADJ007,12/22/2025,Potential fraud indicator reviewed.
+NOTE00207,CLM00074,ADJ002,12/11/2025,Photos and damage details reviewed.
+NOTE00208,CLM00075,ADJ007,12/18/2025,Claim moved to next review stage.
+NOTE00209,CLM00075,ADJ007,12/23/2025,Coverage verification completed.
+NOTE00210,CLM00075,ADJ007,12/25/2025,Payment recommendation prepared.
+NOTE00211,CLM00076,ADJ003,11/28/2025,Customer contacted for additional information.
+NOTE00212,CLM00076,ADJ003,11/27/2025,Payment recommendation prepared.
+NOTE00213,CLM00076,ADJ003,11/23/2025,Customer contacted for additional information.
+NOTE00214,CLM00077,ADJ005,1/20/2026,Customer contacted for additional information.
+NOTE00215,CLM00077,ADJ005,1/19/2026,Claim moved to next review stage.
+NOTE00216,CLM00077,ADJ005,2/8/2026,Customer contacted for additional information.
+NOTE00217,CLM00078,ADJ004,4/30/2026,Coverage verification completed.
+NOTE00218,CLM00078,ADJ004,4/17/2026,Photos and damage details reviewed.
+NOTE00219,CLM00079,ADJ008,4/2/2026,Potential fraud indicator reviewed.
+NOTE00220,CLM00079,ADJ008,4/6/2026,Coverage verification completed.
+NOTE00221,CLM00080,ADJ010,12/3/2025,Photos and damage details reviewed.
+NOTE00222,CLM00080,ADJ010,11/18/2025,Potential fraud indicator reviewed.
+NOTE00223,CLM00080,ADJ010,11/25/2025,Claim opened and initial review started.
+NOTE00224,CLM00080,ADJ010,12/6/2025,Coverage verification completed.
+NOTE00225,CLM00081,ADJ010,3/9/2026,Potential fraud indicator reviewed.
+NOTE00226,CLM00081,ADJ010,3/3/2026,Claim opened and initial review started.
+NOTE00227,CLM00081,ADJ010,3/13/2026,Coverage verification completed.
+NOTE00228,CLM00081,ADJ010,2/25/2026,Adjuster requested supporting documents.
+NOTE00229,CLM00082,ADJ002,1/19/2026,Customer contacted for additional information.
+NOTE00230,CLM00083,ADJ002,11/25/2025,Claim moved to next review stage.
+NOTE00231,CLM00083,ADJ002,11/20/2025,Payment recommendation prepared.
+NOTE00232,CLM00084,ADJ008,5/4/2026,Payment recommendation prepared.
+NOTE00233,CLM00085,ADJ005,1/23/2026,Potential fraud indicator reviewed.
+NOTE00234,CLM00085,ADJ005,1/23/2026,Potential fraud indicator reviewed.
+NOTE00235,CLM00085,ADJ005,1/22/2026,Customer contacted for additional information.
+NOTE00236,CLM00086,ADJ005,12/18/2025,Payment recommendation prepared.
+NOTE00237,CLM00086,ADJ005,12/26/2025,Photos and damage details reviewed.
+NOTE00238,CLM00086,ADJ005,1/2/2026,Adjuster requested supporting documents.
+NOTE00239,CLM00087,ADJ006,2/11/2026,Photos and damage details reviewed.
+NOTE00240,CLM00088,ADJ001,3/30/2026,Coverage verification completed.
+NOTE00241,CLM00088,ADJ001,4/5/2026,Customer contacted for additional information.
+NOTE00242,CLM00088,ADJ001,4/1/2026,Claim moved to next review stage.
+NOTE00243,CLM00089,ADJ012,3/1/2026,Potential fraud indicator reviewed.
+NOTE00244,CLM00089,ADJ012,2/26/2026,Photos and damage details reviewed.
+NOTE00245,CLM00090,ADJ007,1/3/2026,Photos and damage details reviewed.
+NOTE00246,CLM00090,ADJ007,1/5/2026,Photos and damage details reviewed.
+NOTE00247,CLM00090,ADJ007,1/7/2026,Photos and damage details reviewed.
+NOTE00248,CLM00090,ADJ007,1/5/2026,Adjuster requested supporting documents.
+NOTE00249,CLM00091,ADJ009,1/5/2026,Claim moved to next review stage.
+NOTE00250,CLM00091,ADJ009,1/26/2026,Payment recommendation prepared.
+NOTE00251,CLM00092,ADJ009,12/30/2025,Claim moved to next review stage.
+NOTE00252,CLM00093,ADJ010,1/12/2026,Photos and damage details reviewed.
+NOTE00253,CLM00094,ADJ006,4/15/2026,Potential fraud indicator reviewed.
+NOTE00254,CLM00094,ADJ006,4/6/2026,Payment recommendation prepared.
+NOTE00255,CLM00095,ADJ006,1/16/2026,Payment recommendation prepared.
+NOTE00256,CLM00095,ADJ006,1/8/2026,Payment recommendation prepared.
+NOTE00257,CLM00095,ADJ006,1/10/2026,Photos and damage details reviewed.
+NOTE00258,CLM00095,ADJ006,12/28/2025,Claim opened and initial review started.
+NOTE00259,CLM00096,ADJ004,3/13/2026,Claim opened and initial review started.
+NOTE00260,CLM00096,ADJ004,3/12/2026,Coverage verification completed.
+NOTE00261,CLM00097,ADJ007,12/16/2025,Payment recommendation prepared.
+NOTE00262,CLM00097,ADJ007,12/29/2025,Payment recommendation prepared.
+NOTE00263,CLM00097,ADJ007,12/28/2025,Customer contacted for additional information.
+NOTE00264,CLM00098,ADJ002,2/25/2026,Claim moved to next review stage.
+NOTE00265,CLM00099,ADJ005,12/18/2025,Payment recommendation prepared.
+NOTE00266,CLM00100,ADJ009,1/23/2026,Customer contacted for additional information.
+NOTE00267,CLM00100,ADJ009,2/2/2026,Coverage verification completed.

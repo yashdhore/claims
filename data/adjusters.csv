@@ -1,0 +1,13 @@
+adjuster_id,adjuster_name,country,state,specialty,max_open_claims
+ADJ001,Alex Miller,UK,England,Comprehensive,15
+ADJ002,Cameron Johnson,USA,CA,Property Damage,10
+ADJ003,Morgan Garcia,USA,CA,Collision,15
+ADJ004,Morgan Moore,UK,Northern Ireland,Bodily Injury,10
+ADJ005,Riley Miller,USA,AZ,Comprehensive,15
+ADJ006,Jordan Wilson,Australia,NSW,Collision,20
+ADJ007,Casey Smith,Australia,SA,Property Damage,10
+ADJ008,Cameron Miller,Australia,NSW,Bodily Injury,15
+ADJ009,Alex Garcia,UK,England,Bodily Injury,10
+ADJ010,Jamie Miller,USA,CA,Property Damage,20
+ADJ011,Riley Garcia,USA,GA,Bodily Injury,10
+ADJ012,Cameron Garcia,UK,Scotland,Comprehensive,25

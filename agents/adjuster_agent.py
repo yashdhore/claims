@@ -1,3 +1,44 @@
+"""
+NOTE:
+The current severity and fraud-risk scoring logic is intentionally implemented
+as a lightweight rule-based simulation model for rapid prototyping purposes.
+
+The goal of this prototype is to demonstrate:
+
+- Agent orchestration
+- Workflow automation
+- Explainable decisioning
+- Operational routing
+- Auditability
+- Executive visibility
+
+rather than production-grade predictive analytics.
+
+Current Severity Logic:
+- Primarily based on estimated claim loss amount
+- Includes minor randomized variation for simulation realism
+- Produces a normalized score between 0 and 100
+
+Current Fraud Logic:
+- Uses simulated fraud-risk scoring with threshold-based adjustments
+- Higher estimated claim amounts increase fraud-risk likelihood
+- Produces a normalized score between 0 and 100
+
+Future Enterprise Evolution:
+The scoring framework can later be replaced with enterprise-grade
+machine learning or predictive analytics models using:
+
+- Historical claims data
+- Fraud detection models
+- Behavioral analytics
+- Geospatial analysis
+- Network analysis
+- Claim pattern recognition
+- Real-time external data sources
+
+without changing the overall workflow orchestration architecture.
+"""
+
 import random
 
 from utils.data_store import (

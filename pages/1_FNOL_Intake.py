@@ -8,6 +8,8 @@ This page allows a user to:
 2. Enter new claim information
 3. Submit the FNOL
 4. Trigger the full agent workflow
+
+This branch also supports a Cosmos DB write path for new FNOL claims.
 """
 
 import sys
@@ -168,7 +170,8 @@ enter claim details, and submit the FNOL. The orchestrator will run all agents a
 payments.csv, tasks.csv, documents.csv, and agent_events.csv exist in the data folder.
 <br><br>
 <strong>What to expect next:</strong> After submission, go to Agent Command Center and select
-the new claim ID to view the agent timeline.
+the new claim ID to view the agent timeline. New FNOLs are also written to the Cosmos DB claims
+and agent_events containers as part of the Cosmos write-path branch.
 """)
 
 try:

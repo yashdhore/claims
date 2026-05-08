@@ -3,19 +3,21 @@ pages/2_Agent_Command_Center.py
 
 Agent Command Center page.
 
-This page reads agent_events.csv and shows the event timeline for a selected claim.
+This page now reads agent_events and claims directly from Cosmos DB and shows the
+event timeline for a selected claim.
 """
 
 import sys
 from pathlib import Path
 
+import pandas as pd
 import streamlit as st
 
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.append(str(ROOT))
 
-from utils.data_store import get_agent_events, get_claims
+from agents.data_access.cosmos_store import cosmos_store
 
 
 
@@ -142,6 +144,39 @@ def instruction_box(body):
     )
 
 
+def load_agent_events_data() -> pd.DataFrame:
+    """
+    Load all agent event documents from the Cosmos DB agent_events container.
+    """
+    try:
+        container = cosmos_store.get_container('agent_events')
+        items = list(
+            container.query_items(
+                query="SELECT * FROM c",
+                enable_cross_partition_query=True,
+            )
+        )
+        return pd.DataFrame(items)
+    except Exception:
+        return pd.DataFrame()
+
+
+def load_claims_data() -> pd.DataFrame:
+    """
+    Load all claim documents from the Cosmos DB claims container.
+    """
+    try:
+        container = cosmos_store.get_container('claims')
+        items = list(
+            container.query_items(
+                query="SELECT * FROM c",
+                enable_cross_partition_query=True,
+            )
+        )
+        return pd.DataFrame(items)
+    except Exception:
+        return pd.DataFrame()
+
 
 AGENT_DESCRIPTIONS = {
     "Intake Agent": "The Intake Agent created the claim and normalized the FNOL data.",
@@ -164,7 +199,7 @@ st.caption("View the full event timeline for each claim.")
 
 instruction_box("""
 <strong>What this tab does:</strong> This page shows the agent-by-agent workflow trail from
-agent_events.csv.
+Cosmos DB agent_events.
 <br><br>
 <strong>Before coming here:</strong> Submit at least one FNOL from the FNOL Intake page.
 <br><br>
@@ -173,10 +208,10 @@ Claims Dashboard to see operational impact.
 """)
 
 try:
-    events = get_agent_events()
-    claims = get_claims()
+    events = load_agent_events_data()
+    claims = load_claims_data()
 except Exception as e:
-    st.error(f"Could not load required CSV files: {e}")
+    st.error(f"Could not load required Cosmos DB data: {e}")
     st.stop()
 
 if events.empty:

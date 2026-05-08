@@ -4,6 +4,8 @@ pages/4_Executive_Insights.py
 Executive and financial insights page.
 """
 
+# This page now reads claims and payments directly from Cosmos DB via cosmos_store.
+
 import sys
 from pathlib import Path
 
@@ -14,7 +16,7 @@ import streamlit as st
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.append(str(ROOT))
 
-from utils.data_store import get_claims, get_payments, claims_by_country
+from agents.data_access.cosmos_store import cosmos_store
 
 
 
@@ -141,6 +143,88 @@ def instruction_box(body):
     )
 
 
+def load_claims_data() -> pd.DataFrame:
+    """
+    Load all claim documents from the Cosmos DB claims container.
+    """
+    try:
+        container = cosmos_store.get_container('claims')
+        items = list(
+            container.query_items(
+                query="SELECT * FROM c",
+                enable_cross_partition_query=True,
+            )
+        )
+        return pd.DataFrame(items)
+    except Exception:
+        return pd.DataFrame()
+
+
+def load_payments_data() -> pd.DataFrame:
+    """
+    Load all payment documents from the Cosmos DB payments container.
+    """
+    try:
+        container = cosmos_store.get_container('payments')
+        items = list(
+            container.query_items(
+                query="SELECT * FROM c",
+                enable_cross_partition_query=True,
+            )
+        )
+        return pd.DataFrame(items)
+    except Exception:
+        return pd.DataFrame()
+
+
+def claims_by_country(claims_df: pd.DataFrame) -> pd.DataFrame:
+    """
+    Build a DataFrame grouped by country with claim counts.
+    """
+    if claims_df.empty or 'country' not in claims_df.columns:
+        return pd.DataFrame(columns=['country', 'total_claims'])
+
+    grouped = (
+        claims_df
+        .assign(country=claims_df['country'].astype(str).fillna('Unknown'))
+        .groupby('country')
+        .size()
+        .reset_index(name='total_claims')
+        .sort_values('total_claims', ascending=False)
+    )
+    return grouped
+
+
+def to_numeric_series(series, default=0.0) -> pd.Series:
+    """
+    Convert a series to numeric values and replace invalid entries with a default.
+    """
+    return pd.to_numeric(series, errors='coerce').fillna(default)
+
+
+def normalize_claims_dataframe(claims_df: pd.DataFrame) -> pd.DataFrame:
+    """
+    Normalize Cosmos DB claim data for executive metrics.
+    """
+    if claims_df.empty:
+        return pd.DataFrame(columns=[
+            'claim_status', 'estimated_loss', 'fraud_risk_score', 'severity_score'
+        ])
+
+    claims_df = claims_df.copy()
+    if 'claim_status' in claims_df.columns:
+        claims_df['claim_status'] = claims_df['claim_status'].astype(str)
+    elif 'status' in claims_df.columns:
+        claims_df['claim_status'] = claims_df['status'].astype(str)
+    else:
+        claims_df['claim_status'] = 'Unknown'
+
+    claims_df['estimated_loss'] = to_numeric_series(claims_df.get('estimated_loss', pd.Series(0, index=claims_df.index)))
+    claims_df['fraud_risk_score'] = to_numeric_series(claims_df.get('fraud_risk_score', pd.Series(0, index=claims_df.index)))
+    claims_df['severity_score'] = to_numeric_series(claims_df.get('severity_score', pd.Series(0, index=claims_df.index)))
+
+    return claims_df
+
 
 st.set_page_config(
     page_title="Executive Insights",
@@ -164,23 +248,35 @@ outstanding exposure, risk concentration, and the future Copilot Studio roadmap.
 """)
 
 try:
-    claims = get_claims()
-    payments = get_payments()
+    claims = normalize_claims_dataframe(load_claims_data())
+    payments = load_payments_data()
 except Exception as e:
     st.error(f"Could not load executive insight data: {e}")
     st.stop()
 
-total_claims = len(claims)
-open_claims = len(claims[claims["claim_status"].isin(["New", "Under Review"])])
-approved_claims = len(claims[claims["claim_status"].isin(["Approved", "Paid", "Closed"])])
-denied_claims = len(claims[claims["claim_status"] == "Denied"])
+if claims.empty:
+    total_claims = 0
+    open_claims = 0
+    approved_claims = 0
+    denied_claims = 0
+    estimated_exposure = 0.0
+    high_fraud = pd.DataFrame()
+    high_severity = pd.DataFrame()
+else:
+    total_claims = len(claims)
+    open_claims = int(claims['claim_status'].str.lower().isin(["new", "under review"]).sum())
+    approved_claims = int(claims['claim_status'].str.lower().isin(["approved", "paid", "closed"]).sum())
+    denied_claims = int((claims['claim_status'].str.lower() == "denied").sum())
+    estimated_exposure = float(claims['estimated_loss'].sum())
+    high_fraud = claims[claims['fraud_risk_score'] >= 75]
+    high_severity = claims[claims['severity_score'] >= 75]
 
-estimated_exposure = float(claims["estimated_loss"].sum()) if "estimated_loss" in claims else 0.0
-total_paid = float(payments["payment_amount"].sum()) if not payments.empty and "payment_amount" in payments else 0.0
+if payments.empty or 'payment_amount' not in payments:
+    total_paid = 0.0
+else:
+    total_paid = float(to_numeric_series(payments['payment_amount']).sum())
+
 outstanding_exposure = estimated_exposure - total_paid
-
-high_fraud = claims[claims["fraud_risk_score"] >= 75] if "fraud_risk_score" in claims else pd.DataFrame()
-high_severity = claims[claims["severity_score"] >= 75] if "severity_score" in claims else pd.DataFrame()
 
 blue_card(
     "Executive Summary",
@@ -220,7 +316,7 @@ and risk concentration.
 st.divider()
 
 st.subheader("Country-Level Insight")
-country_df = claims_by_country()
+country_df = claims_by_country(claims)
 
 if not country_df.empty:
     st.dataframe(country_df, use_container_width=True)

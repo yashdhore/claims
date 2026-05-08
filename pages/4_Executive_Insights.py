@@ -238,10 +238,11 @@ st.caption("Business and financial view for leadership.")
 
 instruction_box("""
 <strong>What this tab does:</strong> This page converts operational claims data into
-executive-level financial and risk insights.
+executive-level financial and risk insights using Cosmos DB.
 <br><br>
-<strong>Before coming here:</strong> Make sure claims.csv and payments.csv have data.
-For the best demo, submit a new FNOL and review the Agent Command Center first.
+<strong>Before coming here:</strong> Confirm that the claims and payments Cosmos DB
+containers are populated. For the best demo, submit a new FNOL and review the Agent
+Command Center first.
 <br><br>
 <strong>What to expect next:</strong> Use this page to discuss exposure, payments,
 outstanding exposure, risk concentration, and the future Copilot Studio roadmap.
@@ -339,6 +340,6 @@ blue_card(
     "Demo Message",
     """
     This prototype shows how an agentic claims workflow creates operational transparency,
-    auditability, and executive-level insight using a lightweight CSV-backed architecture.
+    auditability, and executive-level insight using Cosmos DB-backed data access.
     """
 )

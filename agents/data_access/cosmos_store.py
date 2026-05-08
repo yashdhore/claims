@@ -22,8 +22,12 @@ Containers in the database:
 """
 
 import os
+from dotenv import load_dotenv
 from azure.cosmos import CosmosClient, exceptions
 from typing import Dict, List, Any, Optional
+
+# Load environment variables from .env automatically when this module is imported.
+load_dotenv()
 
 
 class CosmosStore:

@@ -80,3 +80,26 @@
     Streamlit / Python Agents
        → cosmos_store.py
        → Azure Cosmos DB
+	   
+21. Created Git branch cosmos-db-work
+22. Pushed cosmos-db-work branch to GitHub
+23. Created separate cosmos-write-path branch
+24. Migrated read-only Claims Dashboard to Cosmos DB
+25. Migrated Executive Insights to Cosmos DB
+26. Migrated Agent Command Center to Cosmos DB
+27. Migrated Intake Agent to Cosmos DB
+28. Migrated Policy Verification Agent to Cosmos DB
+29. Migrated Adjuster Agent to Cosmos DB
+30. Migrated Processing Agent to Cosmos DB
+31. Migrated Reporting Agent to Cosmos DB
+32. Tested orchestrator directly with python -m agents.orchestrator
+33. Tested Streamlit FNOL submission end-to-end
+34. Verified CLM00117 / CLM00118 in Cosmos DB backend
+35. Verified related agent_events, tasks, and payments in Cosmos DB
+
+Moved from
+Streamlit + Python Agents + CSV
+
+moved to 
+
+Streamlit + Python Agents + cosmos_store.py + Azure Cosmos DB

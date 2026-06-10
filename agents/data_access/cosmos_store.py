@@ -30,6 +30,22 @@ from typing import Dict, List, Any, Optional
 load_dotenv()
 
 
+def _get_secret(key: str, default: str = None) -> str:
+    """
+    Read a secret from Streamlit Cloud secrets first, then fall back to
+    environment variables. This allows the same code to run locally (.env)
+    and on Streamlit Cloud (st.secrets).
+    """
+    try:
+        import streamlit as st
+        value = st.secrets.get(key)
+        if value:
+            return value
+    except Exception:
+        pass
+    return os.getenv(key, default)
+
+
 class CosmosStore:
     """
     A class to handle interactions with Azure Cosmos DB for the claims system.
@@ -37,11 +53,11 @@ class CosmosStore:
 
     def __init__(self):
         """
-        Initialize the Cosmos DB client using environment variables.
+        Initialize the Cosmos DB client using environment variables or Streamlit secrets.
         """
-        self.endpoint = os.getenv('COSMOS_ENDPOINT')
-        self.key = os.getenv('COSMOS_KEY')
-        self.database_name = os.getenv('COSMOS_DATABASE', 'claimsdb')
+        self.endpoint = _get_secret('COSMOS_ENDPOINT')
+        self.key = _get_secret('COSMOS_KEY')
+        self.database_name = _get_secret('COSMOS_DATABASE') or 'claimsdb'
 
         if not all([self.endpoint, self.key]):
             raise ValueError("COSMOS_ENDPOINT and COSMOS_KEY environment variables must be set")

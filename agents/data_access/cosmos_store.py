@@ -93,10 +93,15 @@ class CosmosStore:
         """
         container = self.get_container('claims')
         query = "SELECT * FROM c"
-        return list(container.query_items(
+        claims = list(container.query_items(
             query=query,
             enable_cross_partition_query=True
         ))
+        # Normalize boolean fields to strings for Streamlit dataframe compatibility
+        for claim in claims:
+            if "coverage_valid" in claim:
+                claim["coverage_valid"] = str(claim["coverage_valid"])
+        return claims
 
     def insert_claim(self, claim_data: Dict[str, Any]) -> Dict[str, Any]:
         """

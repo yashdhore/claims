@@ -1,90 +1,84 @@
+"""
+migrate_csv_to_cosmos.py
+
+Migrates all CSV data files into Azure Cosmos DB containers.
+Reads from the data/ folder and upserts into the corresponding containers.
+"""
+
 import os
+import csv
+import uuid
 from dotenv import load_dotenv
 from azure.cosmos import CosmosClient
 
-# --------------------------------------------------
-# Load environment variables from .env
-# --------------------------------------------------
 load_dotenv()
 
 COSMOS_ENDPOINT = os.getenv("COSMOS_ENDPOINT")
 COSMOS_KEY = os.getenv("COSMOS_KEY")
 COSMOS_DATABASE = os.getenv("COSMOS_DATABASE", "claimsdb")
 
-# --------------------------------------------------
-# Print configuration information
-# --------------------------------------------------
+DATA_DIR = os.path.join(os.path.dirname(__file__), "..", "data")
+
+# Map CSV file -> container name
+CSV_CONTAINERS = {
+    "claims.csv":       "claims",
+    "policies.csv":     "policies",
+    "adjusters.csv":    "adjusters",
+    "payments.csv":     "payments",
+    "tasks.csv":        "tasks",
+    "documents.csv":    "documents",
+    "claim_notes.csv":  "claim_notes",
+    "agent_events.csv": "agent_events",
+}
+
 print(f"COSMOS_ENDPOINT: {COSMOS_ENDPOINT}")
-
-if COSMOS_KEY:
-    print(f"COSMOS_KEY: {COSMOS_KEY[:10]}...")
-else:
-    print("COSMOS_KEY: Not found")
-
+print(f"COSMOS_KEY: {COSMOS_KEY[:10]}..." if COSMOS_KEY else "COSMOS_KEY: Not found")
 print(f"COSMOS_DATABASE: {COSMOS_DATABASE}")
-
-# --------------------------------------------------
-# Connect to Cosmos DB
-# --------------------------------------------------
 print("Connecting to Cosmos DB...")
 
-client = CosmosClient(
-    COSMOS_ENDPOINT,
-    credential=COSMOS_KEY
-)
-
+client = CosmosClient(COSMOS_ENDPOINT, credential=COSMOS_KEY)
 database = client.get_database_client(COSMOS_DATABASE)
 
-# --------------------------------------------------
-# Get claims container
-# --------------------------------------------------
-claims_container = database.get_container_client("claims")
 
-# --------------------------------------------------
-# Query all claims
-# --------------------------------------------------
-query = "SELECT * FROM c"
+def migrate_csv(csv_file: str, container_name: str):
+    filepath = os.path.join(DATA_DIR, csv_file)
+    if not os.path.exists(filepath):
+        print(f"  SKIPPED — file not found: {filepath}")
+        return 0
 
-claims = list(
-    claims_container.query_items(
-        query=query,
-        enable_cross_partition_query=True
-    )
-)
+    container = database.get_container_client(container_name)
+    count = 0
 
-# --------------------------------------------------
-# Print summary
-# --------------------------------------------------
-print(f"\nFound {len(claims)} claims in the database.\n")
+    with open(filepath, encoding="utf-8") as f:
+        reader = csv.DictReader(f)
+        for row in reader:
+            # Ensure every document has an 'id' field (required by Cosmos DB)
+            if "id" not in row or not row["id"]:
+                row["id"] = str(uuid.uuid4())
 
-if not claims:
-    print("No claims found in the database.")
+            # Convert numeric strings to numbers where possible
+            for key, value in row.items():
+                try:
+                    if "." in str(value):
+                        row[key] = float(value)
+                    else:
+                        row[key] = int(value)
+                except (ValueError, TypeError):
+                    pass
 
-else:
+            container.upsert_item(row)
+            count += 1
 
-    # --------------------------------------------------
-    # Print each claim
-    # --------------------------------------------------
-    for idx, claim in enumerate(claims, start=1):
+    return count
 
-        print("-" * 50)
 
-        print(f"{idx}. ID: {claim.get('id', 'N/A')}")
-        print(f"   Claim ID: {claim.get('claim_id', 'N/A')}")
-        print(f"   Status: {claim.get('claim_status', 'N/A')}")
-        print(f"   Policy ID: {claim.get('policy_id', 'N/A')}")
-        print(f"   Customer ID: {claim.get('customer_id', 'N/A')}")
-        print(f"   Country: {claim.get('country', 'N/A')}")
-        print(f"   State: {claim.get('state', 'N/A')}")
-        print(f"   Claim Date: {claim.get('claim_date', 'N/A')}")
-        print(f"   Claim Type: {claim.get('claim_type', 'N/A')}")
-        print(f"   Loss Cause: {claim.get('loss_cause', 'N/A')}")
-        print(f"   Estimated Loss: {claim.get('estimated_loss', 'N/A')}")
-        print(f"   Deductible: {claim.get('deductible', 'N/A')}")
-        print(f"   Coverage Limit: {claim.get('coverage_limit', 'N/A')}")
-        print(f"   Coverage Valid: {claim.get('coverage_valid', 'N/A')}")
-        print(f"   Severity Score: {claim.get('severity_score', 'N/A')}")
-        print(f"   Fraud Risk Score: {claim.get('fraud_risk_score', 'N/A')}")
-        print(f"   Adjuster ID: {claim.get('adjuster_id', 'N/A')}")
+print("\nStarting migration...\n")
+total = 0
 
-print("\nCosmos DB test completed successfully.")
+for csv_file, container_name in CSV_CONTAINERS.items():
+    print(f"Migrating {csv_file} -> {container_name}...")
+    count = migrate_csv(csv_file, container_name)
+    print(f"  {count} records loaded.")
+    total += count
+
+print(f"\nMigration complete. Total records loaded: {total}")

@@ -1,2 +1,4 @@
 streamlit
 pandas
+azure-cosmos
+python-dotenv
